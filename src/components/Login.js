@@ -9,7 +9,7 @@ import {
 import { auth } from "../utils/firebase";
 import { useDispatch } from "react-redux";
 import { addUser } from "../utils/userSlice";
-import { BG_URL, USER_AVATAR } from "../utils/constants";
+import { USER_AVATAR } from "../utils/constants";
 // import { useNavigate } from "react-router-dom";
 
 const Login = () => {
@@ -50,7 +50,7 @@ const Login = () => {
             setErrorMessage(error.message);
           })
             .then(() => {
-              const { uid, email, displayName, photoURL } = auth.currentUser;
+              const { uid, email, displayName} = auth.currentUser;
               dispatch(
                 addUser({
                   uid: uid,

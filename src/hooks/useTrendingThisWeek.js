@@ -20,7 +20,7 @@ const useTrendingThisWeek = () => {
 
   useEffect(() => {
     !trendingThisWeek && getTrendingMoviesThisWeek();
-  }, []);
+  });
 };
 
 export default useTrendingThisWeek;
