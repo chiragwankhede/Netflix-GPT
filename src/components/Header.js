@@ -125,11 +125,11 @@ const Header = () => {
         dispatch(removeUser());
         navigate("/");
       }
-    });
+    },[]);
 
     // Unsiubscribe when component unmounts
     return () => unsubscribe();
-  }, []);
+  });
 
   const handleGptSearchClick = () => {
     // Toggle GPT Search
