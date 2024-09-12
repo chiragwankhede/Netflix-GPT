@@ -17,6 +17,8 @@ const Login = () => {
   const [errorMessage, setErrorMessage] = useState(null);
   const dispatch = useDispatch();
   // const navigate=useNavigate();
+  console.log(BG_URL);
+  
 
   const name = useRef(null);
   const email = useRef(null);
